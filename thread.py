@@ -20,7 +20,7 @@ if __name__ == '__main__':
     lock = RLock()
 
     def locking_ten(f: callable):
-        for i in range(10):
+        for i in range(10000):
             with lock:
                 f()
 
